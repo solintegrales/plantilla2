@@ -11,6 +11,7 @@ import { PrincipalComponent } from './paginas/principal.component';
 import { NoencontroComponent } from './404/noencontro/noencontro.component';
 import { LoginComponent } from './auth/login/login.component';
 import { PreloaderComponent } from './partes/preloader/preloader.component';
+import { Login2Component } from './auth/login2/login2.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PreloaderComponent } from './partes/preloader/preloader.component';
     PrincipalComponent,
     NoencontroComponent,
     LoginComponent,
-    PreloaderComponent
+    PreloaderComponent,
+    Login2Component
   ],
   imports: [
     BrowserModule,
