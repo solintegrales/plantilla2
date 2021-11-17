@@ -1,7 +1,14 @@
 <div class="wrapper">
-<app-preloader></app-preloader>
-<app-nav></app-nav>
-<app-header></app-header>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+    <!-- <app-preloader></app-preloader> -->
+    <app-header></app-header>
+    <app-nav></app-nav>
+    <div class="content-wrapper">
+        <!-- <app-sidebar></app-sidebar> -->
+        <section class="content">
+            <div class="container-fluid">
+                <router-outlet></router-outlet>
+            </div>
+        </section>
+    </div>
+    <app-footer></app-footer>
 </div>

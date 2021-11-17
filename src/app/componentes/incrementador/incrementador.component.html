@@ -1,0 +1,21 @@
+<div class="input-group">
+    <span class="input-group-btn">
+        <button class="btn {{colorboton}}" 
+                type="button"
+                (click)="cambiarvalor(-10)" >
+            <i class="fa fa-minus"></i>
+        </button>
+    </span>
+    <input type="text" 
+           class="form-control" 
+           disabled 
+           [(ngModel)]="porc" 
+           placeholder="Progreso">
+    <span class="input-group-btn">
+        <button class="btn {{colorboton}}" 
+                type="button"
+                (click)="cambiarvalor(10)">
+            <i  class="fa fa-plus"></i>
+        </button>
+    </span>
+</div>
