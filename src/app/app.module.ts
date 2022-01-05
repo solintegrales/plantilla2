@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './partes/header/header.component';
@@ -18,12 +20,12 @@ import { Grafica2Component } from './paginas/grafica2/grafica2.component';
 import { ProgresoComponent } from './paginas/progreso/progreso.component';
 import { PromesasComponent } from './paginas/promesas/promesas.component';
 import { PlantillaComponent } from './paginas/plantilla/plantilla.component';
-import { FormsModule } from '@angular/forms';
 import { IncrementadorComponent } from './componentes/incrementador/incrementador.component';
 import { ChartsModule } from 'ng2-charts';
 import { RxjsComponent } from './paginas/rxjs/rxjs.component';
 import { Login3Component } from './auth/login3/login3.component';
 import { NavlComponent } from './partes/navl/navl.component';
+import { RegistroComponent } from './auth/registro/registro.component';
 
 @NgModule({
   declarations: [
@@ -46,13 +48,16 @@ import { NavlComponent } from './partes/navl/navl.component';
     IncrementadorComponent,
     RxjsComponent,
     Login3Component,
-    NavlComponent
+    NavlComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ChartsModule
+    ChartsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
